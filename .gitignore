@@ -35,3 +35,11 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
