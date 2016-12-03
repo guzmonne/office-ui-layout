@@ -1,0 +1,52 @@
+/* 
+Set the main wrapper component to 
+take up the entire height of the page
+ */
+.App {
+  min-height: 100vh; 
+}
+/*
+To use Flexbox we need to set the display
+setting of the container component to flex.
+The we set the direction of the wrapped 
+components. By default flexbox will order 
+them by row, but we can also tell it to do
+it by column.
+*/
+.App {
+  display: flex;
+  flex-direction: column;
+}
+/*
+Something similar is done to the body 
+element, except we order the wrapped 
+component as rows.
+*/
+.App .body {
+  display: flex;
+  flex-direction: row;
+}
+/*
+Flexbox let's us reorder the way the 
+elements are placed inside the wrapper
+component. Using the order rule, we move
+the sidebar to the left of the content 
+component. We also set its width to 12em
+and set its flex propertires so it doesn't
+grow or shrink with the rest of the page.
+*/
+.body .sidebar {
+  order: -1;
+  max-width: 12em;
+  flex-grow: 0;    /* Defined the ability to groe */
+  flex-shrink: 0;  /* Defines the ability to shrink */
+  flex-basis: 12em;/* Default value of the element before distribuing the remaing space */
+}
+/*
+Lastly we give some custom height to our 
+header and footer components.
+*/
+.App .header,
+.App .footer {
+  height: 4em;
+}
