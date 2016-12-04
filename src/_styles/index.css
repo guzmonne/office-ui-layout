@@ -5,30 +5,6 @@ body {
   font-size: 16px;
 }
 
-.App {
-  background-color: black;
-}
-
-.App .header {
-  background-color: blue;
-}
-
-.App .body {
-  background-color: red;
-}
-
-.App .body .content {
-  background-color: green;
-}
-
-.App .body .sidebar {
-  background-color: yellow;
-}
-
-.App .footer {
-  background-color: grey;
-}
-
 /** Main Layout rules */
 .App {
   min-height: 100vh; 
@@ -65,4 +41,9 @@ body {
 
 .App .footer {
   height: 4em;
+}
+
+/** Text */
+.text-red {
+  color: red;
 }
